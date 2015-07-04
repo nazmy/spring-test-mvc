@@ -59,7 +59,7 @@ public class JavaTestContextTests {
 	public void tilesDefinitions() throws Exception {
 		this.mockMvc.perform(get("/"))
 				.andExpect(status().isOk())
-				.andExpect(forwardedUrl("/WEB-INF/layouts/standardLayout1.jsp"));
+				.andExpect(forwardedUrl("/WEB-INF/layouts/standardLayout.jsp"));
 	}
 
 }
