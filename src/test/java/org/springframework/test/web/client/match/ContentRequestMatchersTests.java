@@ -97,7 +97,7 @@ public class ContentRequestMatchersTests {
 
 	@Test(expected=AssertionError.class)
 	public void testXmlNoMatch() throws Exception {
-		this.request.getBody().write("<foo>11test123yeysdjd</foo>".getBytes());
+		this.request.getBody().write("<foo>11</foo>".getBytes());
 
 		RequestMatchers.content().xml("<foo>22</foo>").match(this.request);
 	}
